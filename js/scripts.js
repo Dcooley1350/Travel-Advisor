@@ -6,7 +6,7 @@ $(document).ready(function()  {
     var userCityOrRural = $("input#cityORrural").val();
     var userClothing = $("#season").val();
     var userWater = $("input:radio[name=water-type]:checked").val();
-
+    
     $(".firstName").text(userName)
 
     if (userClothing === "1") {
@@ -25,9 +25,10 @@ $(document).ready(function()  {
     }
     $(".gender").text(prefix);
 
+
     if (userCityOrRural === "3" && userWater === "ocean") {
       $("#CityOcean").show();
-    } else if (userCityOrRural === "3" && userWater === "river") {
+    } else if (userCityOrRural === "3" && userWater === "river" ) {
       $("#CityRiver").show();
     } else if (userCityOrRural === "3" && userWater === "lake") {
       $("#CityLake").show();
