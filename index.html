@@ -13,6 +13,54 @@
         <h1>Where do you want to go?</h1>
         <h3>Let our online travel advisor help you decide!</h3>
       </div>
+      <h2> First, help us help you by telling us a little more about yourself:</h2>
+      <form id="survey">
+        <div class="form-group">
+          <label for="firstName">Name:</label>
+          <input id="firstName" type="text">
+        </div>
+        <div class="form-group">
+          <h2>Are you:</h2>
+          <select class="form-control" id="gender">
+            <option>Male?</option>
+            <option>Female?</option>
+            <option>I prefer not to identify. We are all people!</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h2>Do you prefer:</h2>
+          <select class="form-control" id="cityORrural">
+            <option>The buzz and energy of city life?</option>
+            <option>The quiet and pristine beauty of the outdoors?</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h2>Do you like to:</h2>
+          <select class="form-control" id="clothingType">
+            <option>To be bundled up in layers and braced against the cold?</option>
+            <option>To put on a bathing suit and need nothing more?</option>
+          </select>
+        </div>
+        <div class="radio">
+          <h2>Would you rather visit:</h2>
+          <label>
+            <input type="radio" name="water-type" value="ocean" checked>
+            The Ocean?
+          </label>
+          <label>
+            <input type="radio" name="water-type" value="river" checked>
+            A River?
+          </label>
+          <label>
+            <input type="radio" name="water-type" value="lake" checked>
+            A Lake?
+          </label>
+          <label>
+            <input type="radio" name="water-type" value="fountain" checked>
+            Some Fountains?
+          </label>
+        </div>
+      </form>
     </div>
   </body>
 </html>
