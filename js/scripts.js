@@ -24,5 +24,19 @@ $(document).ready(function()  {
       var prefix = "Non-Demoninational Person"
     }
     $(".gender").text(prefix);
+
+    if (userCityOrRural === "3" && userWater === "ocean") {
+      $("#CityOcean").show();
+    } else if (userCityOrRural === "3" && userWater === "river") {
+      $("#CityRiver").show();
+    } else if (userCityOrRural === "3" && userWater === "lake") {
+      $("#CityLake").show();
+    } else if (userCityOrRural === "4" && userWater === "ocean") {
+      $("#RuralOcean").show();
+    } else if (userCityOrRural === "4" && userWater === "river") {
+      $("#RuralRiver").show();
+    } else if (userCityOrRural === "4" && userWater === "lake") {
+      $("#RuralLake").show();
+    } 
   })
 })

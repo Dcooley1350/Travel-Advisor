@@ -1,15 +1,34 @@
 .suggestion {
-  display:;
+  display: none;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
 .panel-title {
+  color: black;
   font-size: 700;
   font-style: italic;
 }
+
+.panel-heading {
+  background-color: lightskyblue;
+}
+
 .panel-body img {
   height: 400px;
   width: 660px;
 }
+
+.panel-body {
+  background-color: lightsalmon;
+}
+
+.jumbotron {
+  background-color: lightskyblue;
+}
+
+body {
+  background-color: lightgreen
+}
+
 
