@@ -1,19 +1,28 @@
 $(document).ready(function()  {
-  $(form#survey).submit(function()  {
-    var userName = $("firstName").val();
-    var userGender = $("gender").val();
-    var userCityOrRural = $("cityORrural").val();
-    var userClothing = $("clothingType").val();
+  $("#survey form").submit(function(event)  {
+    event.preventDefault();
+    var userName = $("input#firstName").val();
+    var userGender = $("#gender").val();
+    var userCityOrRural = $("input#cityORrural").val();
+    var userClothing = $("#season").val();
     var userWater = $("input:radio[name=water-type]:checked").val();
+
+    $(".firstName").text(userName)
+
+    if (userClothing === "1") {
+      var season = "Winter"
+    } else {
+      var season = "Summer"
+    }
+    $(".season").text(season);
 
     if (userGender === "Male?") {
       var prefix = "Mr.";
-    }
-    if (userGender === "Female?") {
+    } else if (userGender === "Female?") {
       var prefix = "Miss";
-    }
-    if (userGender === "I prefer not to identify. We are all people!") {
+    } else if (userGender === "I prefer not to identify. We are all people!") {
       var prefix = "Non-Demoninational Person"
     }
+    $(".gender").text(prefix);
   })
 })

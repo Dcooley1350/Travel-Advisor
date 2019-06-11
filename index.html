@@ -4,7 +4,7 @@
     <link href="css/bootstrap.css.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scipts.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Travel Advisor</title>
   </head>
   <body>
@@ -14,57 +14,59 @@
         <h3>Let our online travel advisor help you decide!</h3>
       </div>
       <h2> First, help us help you by telling us a little more about yourself:</h2>
-      <form id="survey">
-        <div class="form-group">
-          <label for="firstName">Name:</label>
-          <input id="firstName" type="text">
-        </div>
-        <div class="form-group">
-          <h2>Are you:</h2>
-          <select class="form-control" id="gender">
-            <option value="5">Male?</option>
-            <option value="6">Female?</option>
-            <option value="7">I prefer not to identify. We are all people!</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <h2>Do you prefer:</h2>
-          <select class="form-control" id="cityORrural">
-            <option value="3">The buzz and energy of city life?</option>
-            <option value="4">The quiet and pristine beauty of the outdoors?</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <h2>Do you like to:</h2>
-          <select class="form-control" id="clothingType">
-            <option value="1">To be bundled up in layers and braced against the cold?</option>
-            <option value="2">To put on a bathing suit and need nothing more?</option>
-          </select>
-        </div>
-        <div class="radio">
-          <h2>Would you rather visit:</h2>
-          <label>
-            <input type="radio" name="water-type" value="ocean" checked>
-            The Ocean?
-          </label>
-          <label>
-            <input type="radio" name="water-type" value="river" checked>
-            A River?
-          </label>
-          <label>
-            <input type="radio" name="water-type" value="lake" checked>
-            A Lake?
-          </label>
-        </div>
-        <button type="submit" class="btn">Tell me where I'm going!</button>
-      </form>
+      <div id="survey">
+        <form>
+          <div class="form-group">
+            <label for="firstName">Name:</label>
+            <input id="firstName" type="text">
+          </div>
+          <div class="form-group">
+            <h2>Are you:</h2>
+            <select class="form-control" id="gender">
+              <option>Male?</option>
+              <option>Female?</option>
+              <option>I prefer not to identify. We are all people!</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <h2>Do you prefer:</h2>
+            <select class="form-control" id="cityORrural">
+              <option value="3">The buzz and energy of city life?</option>
+              <option value="4">The quiet and pristine beauty of the outdoors?</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <h2>Do you like to:</h2>
+            <select class="form-control" id="season">
+              <option value="1">To be bundled up in layers and braced against the cold?</option>
+              <option value="2">To put on a bathing suit and need nothing more?</option>
+            </select>
+          </div>
+          <div class="radio">
+            <h2>Would you rather visit:</h2>
+            <label>
+              <input type="radio" name="water-type" value="ocean" checked>
+              The Ocean?
+            </label>
+            <label>
+              <input type="radio" name="water-type" value="river" checked>
+              A River?
+            </label>
+            <label>
+              <input type="radio" name="water-type" value="lake" checked>
+              A Lake?
+            </label>
+          </div>
+          <button type="submit" class="btn">Tell me where I'm going!</button>
+        </form>
+      </div>
 
       <div class="suggestion">
         <div id="CityOcean">
           <div class="panel panel-info">
             <div class="panel-heading">
               <div class="panel-title">
-                <h1>Congratulations <span></span>> NAMEHERE, you are headed to <strong>Miami</strong> in the SEASONHERE!</h1>
+                <h1>Congratulations <span class="gender"></span> <span class="firstName"></span>, you are headed to <strong>Miami</strong> in the <span class="season"></span></h1>
               </div>
               <div class="panel-body">
                 <img src="img/MiamiPhoto.jpg" alt="Miami beach and skyline.">
@@ -88,7 +90,7 @@
           <div class="panel panel-info">
             <div class="panel-heading">
               <div class="panel-title">
-                <h1>Congratulations PREFIXHERE NAMEHERE, you are headed to <strong>Manhattan</strong> in the SEASONHERE!</h1>
+                <h1>Congratulations <span class="prefix"></span> <span class="userName"></span>, you are headed to <strong>Manhattan</strong> in the <span class="season"></span></h1>
               </div>
               <div class="panel-body">
                 <img src="img/Manhattan Photo.jpg" alt="Manhattan and skyline.">
@@ -111,12 +113,15 @@
         <div id="CityLake">
 
         </div>
+
         <div id="RuralOcean">
 
         </div>
+
         <div id="RuralRivers">
 
         </div>
+
         <div id="RuralLakes">
 
         </div>
