@@ -13,7 +13,7 @@ $(document).ready(function()  {
       var prefix = "Miss";
     }
     if (userGender === "I prefer not to identify. We are all people!") {
-      var prefix = "Non Demoninational Person"
+      var prefix = "Non-Demoninational Person"
     }
   })
 })
