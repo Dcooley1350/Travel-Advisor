@@ -1,5 +1,4 @@
 .suggestion {
-  display: none;
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -31,4 +30,27 @@ body {
   background-color: lightgreen
 }
 
+#CityOcean {
+  display: none
+}
+
+#CityRiver {
+  display: none
+}
+
+#CityLake {
+  display: none
+}
+
+#RuralOcean {
+  display: none
+}
+
+#RuralLake {
+  display: none
+}
+
+#RuralRiver {
+  display: none
+}
 

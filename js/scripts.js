@@ -3,7 +3,7 @@ $(document).ready(function()  {
     event.preventDefault();
     var userName = $("input#firstName").val();
     var userGender = $("#gender").val();
-    var userCityOrRural = $("input#cityORrural").val();
+    var userCityOrRural = $("#cityORrural").val();
     var userClothing = $("#season").val();
     var userWater = $("input:radio[name=water-type]:checked").val();
     
