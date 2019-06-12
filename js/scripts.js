@@ -27,17 +27,17 @@ $(document).ready(function()  {
 
 
     if (userCityOrRural === "3" && userWater === "ocean") {
-      $("#CityOcean").show();
+      $("#CityOcean").fadeIn();
     } else if (userCityOrRural === "3" && userWater === "river" ) {
-      $("#CityRiver").show();
+      $("#CityRiver").fadeIn();
     } else if (userCityOrRural === "3" && userWater === "lake") {
-      $("#CityLake").show();
+      $("#CityLake").fadeIn();
     } else if (userCityOrRural === "4" && userWater === "ocean") {
-      $("#RuralOcean").show();
+      $("#RuralOcean").fadeIn();
     } else if (userCityOrRural === "4" && userWater === "river") {
-      $("#RuralRiver").show();
+      $("#RuralRiver").fadeIn();
     } else if (userCityOrRural === "4" && userWater === "lake") {
-      $("#RuralLake").show();
+      $("#RuralLake").fadeIn();
     } 
   })
 })
